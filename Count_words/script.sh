@@ -2,8 +2,8 @@
 
 # === CONFIGURATION ===
 GITHUB_USER="DiviPavanKumar"
-REPO="DAWS"
-BRANCH="df93ec4a95ce567c8e1e24d536287a22da0aa27a"
+REPO="Assignments"
+BRANCH="master"
 DIR_PATH="Assignments/Count_words"
 
 # === COLORS & STYLES ===
