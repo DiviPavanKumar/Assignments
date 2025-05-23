@@ -6,7 +6,7 @@
                         301	        Moved Permanently - URL permanently redirected
                         302	        Found (Temporary Redirect)
                         400	        Bad Request - Client sent an invalid request
-HTTP Status Code	    401	        Unauthorized - Authentication required
+HTTP Status Code	401	        Unauthorized - Authentication required
                         403	        Forbidden - Server refuses to respond
                         404	        Not Found - Resource not found
                         500	        Internal Server Error
@@ -30,9 +30,9 @@ Shell Variable	        $*	        All positional parameters as a single word
                         53	        DNS - Domain Name System
                         80	        HTTP - Web Traffic
                         110	        POP3 - Email Retrieval
-Port Number	            143	        IMAP - Email Retrieval
+Port Number	        143	        IMAP - Email Retrieval
                         443	        HTTPS - Secure Web Traffic
-                        3306	    MySQL Database
-                        5432	    PostgreSQL Database
-                        6379	    Redis
-                        27017	    MongoDB
+                        3306	        MySQL Database
+                        5432	        PostgreSQL Database
+                        6379	        Redis
+                        27017	        MongoDB
