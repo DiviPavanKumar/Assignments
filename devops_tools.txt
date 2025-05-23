@@ -2,9 +2,3 @@ As a DevOps engineer, understanding Jenkins is crucial for automating build and 
 Jenkins allows teams to run continuous integration and continuous delivery with ease. 
 Integrating it with Git and Docker enhances collaboration and deployment speed. 
 Learning Groovy scripts helps customize Jenkins workflows effectively.
-
-Replaceable keywords:
-* Jenkins → GitLab CI
-* Groovy → YAML
-* Git → Bitbucket
-* Docker → Podman

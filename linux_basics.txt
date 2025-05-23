@@ -1,9 +1,3 @@
 Linux is a fundamental skill for any DevOps engineer. 
 Tasks like managing services with systemctl, monitoring resources using top or htop, and writing shell scripts using bash are daily activities. 
 Knowledge of file permissions, cron jobs, and process management ensures stable server operations.
-
-Replaceable keywords:
-* systemctl → service
-* top → glances
-* bash → zsh
-* cron jobs → systemd timers
