@@ -108,4 +108,4 @@ while IFS= read -r line; do
 done <<< "$MODIFIED"
 
 # === DONE ===
-echo -e "\n${GREEN}✅ Done. Thank you for testing the script!${RESET}"
+echo -e "\n${GREEN} Done. Thank you for testing the script!${RESET}"
