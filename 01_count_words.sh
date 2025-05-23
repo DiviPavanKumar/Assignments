@@ -4,7 +4,6 @@
 GITHUB_USER="DiviPavanKumar"
 REPO="Assignments"
 BRANCH="master"
-DIR_PATH="Count_words"
 
 # === COLORS & STYLES ===
 RED="\033[31m"
@@ -15,7 +14,7 @@ CYAN="\033[36m"
 BOLD="\033[1m"
 RESET="\033[0m"
 
-API_URL="https://api.github.com/repos/$GITHUB_USER/$REPO/contents/$DIR_PATH?ref=$BRANCH"
+API_URL="https://api.github.com/repos/$GITHUB_USER/$REPO/contents/?ref=$BRANCH"
 
 echo -e "${YELLOW}Fetching file list from GitHub...${RESET}"
 
@@ -44,7 +43,7 @@ while true; do
 
     if [[ "$CHOICE" =~ ^[0-9]+$ ]] && (( CHOICE >= 1 && CHOICE <= ${#FILES[@]} )); then
         FILENAME="${FILES[$((CHOICE - 1))]}"
-        RAW_URL="https://raw.githubusercontent.com/$GITHUB_USER/$REPO/$BRANCH/$DIR_PATH/$FILENAME"
+        RAW_URL="https://raw.githubusercontent.com/$GITHUB_USER/$REPO/$BRANCH/$FILENAME"
 
         echo -e "\n${CYAN}${BOLD}Top 5 Most Frequent Words in '$FILENAME':${RESET}\n"
         curl -s "$RAW_URL" | \
