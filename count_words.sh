@@ -5,7 +5,6 @@ GITHUB_USER="DiviPavanKumar"
 REPO="Assignments"
 BRANCH="master"
 DIR_PATH="Count_words"
-EXCLUDE_FILE="script.sh"
 
 # === COLORS & STYLES ===
 RED="\033[31m"
@@ -19,7 +18,9 @@ RESET="\033[0m"
 API_URL="https://api.github.com/repos/$GITHUB_USER/$REPO/contents/$DIR_PATH?ref=$BRANCH"
 
 echo -e "${YELLOW}Fetching file list from GitHub...${RESET}"
-mapfile -t FILES < <(curl -s "$API_URL" | grep '"name":' | cut -d '"' -f 4 | grep -v "^$EXCLUDE_FILE$")
+
+# === Get only .txt files from GitHub API ===
+mapfile -t FILES < <(curl -s "$API_URL" | grep '"name":' | cut -d '"' -f 4 | grep '\.txt$')
 
 if [ ${#FILES[@]} -eq 0 ]; then
     echo -e "${RED}No files found or failed to fetch from GitHub.${RESET}"
