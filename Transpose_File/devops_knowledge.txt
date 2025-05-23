@@ -1,0 +1,38 @@
+        Category	Code/Variable	Description
+        
+                        200	        OK - Successful HTTP request
+                        201	        Created - Resource successfully created
+                        204	        No Content - Successful but no data returned
+                        301	        Moved Permanently - URL permanently redirected
+                        302	        Found (Temporary Redirect)
+                        400	        Bad Request - Client sent an invalid request
+HTTP Status Code	    401	        Unauthorized - Authentication required
+                        403	        Forbidden - Server refuses to respond
+                        404	        Not Found - Resource not found
+                        500	        Internal Server Error
+                        502	        Bad Gateway
+                        503	        Service Unavailable
+                        504	        Gateway Timeout
+
+                        $0	        Name of the script
+                        $1, $2 ...	Positional parameters (arguments)
+                        $#	        Number of positional parameters
+                        $@	        All positional parameters as separate words
+Shell Variable	        $*	        All positional parameters as a single word
+                        $$	        Process ID of the current shell
+                        $?	        Exit status of the last command
+                        $!	        PID of last background command
+                        $-	        Current options set for the shell
+                        $_	        Last argument of the previous command
+
+                        22	        SSH - Secure Shell
+                        25	        SMTP - Email Sending
+                        53	        DNS - Domain Name System
+                        80	        HTTP - Web Traffic
+                        110	        POP3 - Email Retrieval
+Port Number	            143	        IMAP - Email Retrieval
+                        443	        HTTPS - Secure Web Traffic
+                        3306	    MySQL Database
+                        5432	    PostgreSQL Database
+                        6379	    Redis
+                        27017	    MongoDB
