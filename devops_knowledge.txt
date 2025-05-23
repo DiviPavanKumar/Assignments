@@ -1,4 +1,4 @@
-        Category	Code/Variable	Description
+Category	   Code/Variable	Description
         
                         200	        OK - Successful HTTP request
                         201	        Created - Resource successfully created

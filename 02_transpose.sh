@@ -12,7 +12,7 @@ YELLOW="\033[33m"
 RESET="\033[0m"
 
 # === Get file name from command-line argument or use default ===
-FILENAME="${1:-devops_knowlwdge.txt}"
+FILENAME="${1:-devops_knowledge.txt}"
 
 # === Build raw GitHub file URL ===
 RAW_URL="https://raw.githubusercontent.com/$GITHUB_USER/$REPO/$BRANCH/$FILENAME"
