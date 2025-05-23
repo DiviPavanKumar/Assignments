@@ -25,10 +25,12 @@ if ! curl --silent --head --fail "$RAW_URL" > /dev/null; then
     exit 1
 fi
 
-# === Transpose and print file content in CYAN ===
-echo
-echo -e "${YELLOW}Transposing file: $FILENAME${RESET}"
-echo 
+# === Show original content ===
+echo -e "\n${YELLOW}${BOLD}Original Content of '$FILENAME':${RESET}\n"
+curl -s "$RAW_URL" | awk -v CYAN="$CYAN" -v RESET="$RESET" '{ print CYAN $0 RESET }'
+
+# === Transpose and print ===
+echo -e "\n${YELLOW}${BOLD}Transposed Output:${RESET}\n"
 curl -s "$RAW_URL" | awk -v CYAN="$CYAN" -v RESET="$RESET" '
 {
     for (i = 1; i <= NF; i++) {
